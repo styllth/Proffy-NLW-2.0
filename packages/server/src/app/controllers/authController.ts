@@ -38,7 +38,7 @@ export default class AuthController {
     if (verify.length > 0)
       response.status(400).json({ error: 'User already exists' });
 
-    const [id] = await db('users').insert({
+    const userId = await db('users').insert({
       email,
       name,
       password: await generateHash(password),
@@ -47,9 +47,9 @@ export default class AuthController {
       bio
     });
 
-    if (!id)
+    if (!userId)
       return response.status(400).json({ error: 'User registration failed' });
 
-    return response.status(201).json({ id });
+    return response.status(201).json({ userId });
   }
 }

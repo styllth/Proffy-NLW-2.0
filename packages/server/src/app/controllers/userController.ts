@@ -126,7 +126,7 @@ export default class UserController {
       whatsapp
     });
 
-    return response.status(201).send();
+    return response.status(201).json({ user: user, status: 'updated' });
   }
 
   async delete(
