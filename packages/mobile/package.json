@@ -1,6 +1,11 @@
 {
   "name": "@proffy/mobile",
   "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Styllth Saraiva Ribeiro",
+    "email": "styllth@yahoo.com.br"
+  },
   "main": "__generated__/AppEntry.js",
   "scripts": {
     "start": "expo start",

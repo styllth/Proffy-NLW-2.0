@@ -4,6 +4,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "author": {
+    "name": "Styllth Saraiva Ribeiro",
+    "email": "styllth@yahoo.com.br"
+  },
   "scripts": {
     "start:web": "yarn workspace @proffy/web start",
     "start:server": "yarn workspace @proffy/server server",
